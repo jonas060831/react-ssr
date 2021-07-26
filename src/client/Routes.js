@@ -9,7 +9,7 @@ export default () => {
         <div>
 
             <Route exact path="/" component={Home} />
-            
+            <Route path="/hi" component={ () => "Hi"} />
         </div>
     );
 };

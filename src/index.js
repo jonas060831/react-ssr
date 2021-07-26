@@ -11,9 +11,9 @@ const PORT = process.env.REACT_APP_PORT || 3000;
 
 app.use(express.static('public'));
 
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
 
-    res.send(renderer(req))
+    res.send(renderer(req));
 });
 
 app.listen( PORT, (req) => {

@@ -4,8 +4,6 @@ import { StaticRouter } from 'react-router-dom';
 
 import Routes from '../client/Routes';
 
-import Home from '../client/components/Home';
-
 export default (req) => {
 
     const content = renderToString(
