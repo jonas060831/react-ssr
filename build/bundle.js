@@ -111,7 +111,7 @@ app.get('*', function (req, res) {
     res.send((0, _renderer2.default)(req));
 });
 
-app.listen(PORT, function (req) {
+app.listen(PORT, function () {
     console.log('\n');
     console.log('Local: \t \t http://localhost:' + PORT);
     console.log('On Your Network: http://' + _lanipaddress2.default + ':' + PORT + ' \n');
@@ -199,7 +199,7 @@ exports.default = function () {
         'div',
         null,
         _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Home2.default }),
-        _react2.default.createElement(_reactRouterDom.Route, { path: '/hi', component: function component() {
+        _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/hi/:variable', component: function component() {
                 return "Hi";
             } })
     );

@@ -24802,7 +24802,7 @@ exports.default = function () {
         'div',
         null,
         _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Home2.default }),
-        _react2.default.createElement(_reactRouterDom.Route, { path: '/hi', component: function component() {
+        _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/hi/:variable', component: function component() {
                 return "Hi";
             } })
     );

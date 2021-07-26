@@ -16,7 +16,7 @@ app.get('*', (req, res) => {
     res.send(renderer(req));
 });
 
-app.listen( PORT, (req) => {
+app.listen( PORT, () => {
     console.log('\n')
 	console.log(`Local: \t \t http://localhost:${PORT}`)
     console.log(`On Your Network: http://${lanipaddress}:${PORT} \n`)
