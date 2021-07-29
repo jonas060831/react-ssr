@@ -7,7 +7,8 @@ frontend:
     # IMPORTANT - Please verify your build commands
     build:
       commands: [
-        "start" : "amplifyPush --simple"
+        "build-server": "webpack --config webpack.server.js --watch",
+        "build-client": "webpack --config webpack.client.js --watch"
       ]
   artifacts:
     # IMPORTANT - Please verify your build output directory
