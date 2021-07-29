@@ -7,7 +7,9 @@ frontend:
     # IMPORTANT - Please verify your build commands
     build:
       commands: [
-        "build":"console.log("lalala lalala lalala .... ....")"
+        "dev:server": "nodemon --watch build --exec \"node build/bundle.js\"",
+        "dev:build-server": "webpack --config webpack.server.js --watch",
+        "dev:build-client": "webpack --config webpack.client.js --watch"
       ]
   artifacts:
     # IMPORTANT - Please verify your build output directory
