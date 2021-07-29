@@ -6,10 +6,7 @@ frontend:
         - npm ci
     # IMPORTANT - Please verify your build commands
     build:
-      commands: [
-        "build-server": "webpack --config webpack.server.js --watch",
-        "build-client": "webpack --config webpack.client.js --watch"
-      ]
+      commands: []
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: public
