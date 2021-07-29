@@ -7,9 +7,8 @@ frontend:
     # IMPORTANT - Please verify your build commands
     build:
       commands: [
-        "dev:server": "nodemon --watch build --exec \"node build/bundle.js\"",
-        "dev:build-server": "webpack --config webpack.server.js --watch",
-        "dev:build-client": "webpack --config webpack.client.js --watch"
+        - if [ "${AWS_BRANCH}" = "master" ]; then echo "main branch"; fi
+        - if [ "${AWS_BRANCH}" = "dev" ]; then echo "dev branch"; fi
       ]
   artifacts:
     # IMPORTANT - Please verify your build output directory
